@@ -63,8 +63,8 @@ enum _fsm_ec25_state{
 	kFSM_ENVIANDO_QIACT,
 	kFSM_ENVIANDO_QMTOPEN,
 	kFSM_ENVIANDO_QMTCONN,
-	kFSM_ENVIANDO_QMTPUB_T_H,
-	kFSM_ENVIANDO_MQTT_MSJ_T_H,
+	kSFM_PUBLICA_TEM_HUM,
+	kFSM_ENVIA_MSJ_MQTT,
 	kFSM_ENVIANDO_CFUN_0,
 	kFSM_ENVIANDO_CFUN_1,
 	kFSM_ENVIANDO_CSQ,
@@ -93,8 +93,8 @@ enum _fsm_ec25_state{
  * Public Prototypes
  ******************************************************************************/
 status_t ec25Inicializacion(void);
-status_t ec25InicializarMQTT(void);
-status_t ec25sensor(float valor_temp, float valor_hum);
+status_t IniciodelPrograma(void);
+status_t Lectura_sensor(float valor_temperatura, float valor_humedad);
 uint8_t ec25Polling(void);
 
 /** @} */ // end of X group
