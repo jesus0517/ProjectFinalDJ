@@ -1,52 +1,17 @@
-# Prerequisites
-*.d
+# Excluye carpetas de MCUXpresso Workspace
+*.metadata
+*.mcuxpressoide_packages_support
+*.launch
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# Excluye carpeta FreeRTOS_TAD_logs
+/FreeRTOS_TAD_logs/
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Excluye carpeta temporal Debug/Release
+/MCUX_FRDM_KL02Z_IoT_RTU_demo/Debug/
+/MCUX_FRDM_KL02Z_IoT_RTU_demo/Release/
 
-# Precompiled Headers
-*.gch
-*.pch
+# Excluye carpeta html de doxygen
+/MCUX_FRDM_KL02Z_IoT_RTU_demo/doxygen/html/
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+#Excluye archivo temporal xml
+/MCUX_FRDM_KL02Z_IoT_RTU_demo/.settings/language.settings.xml
