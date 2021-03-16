@@ -79,7 +79,9 @@ typedef struct _sht3x_data{
 /*******************************************************************************
  * Public Prototypes
  ******************************************************************************/
+
 status_t sht3xReadData(sht3x_data_t *data);
+#include "sdk_pph_sht3x.h"
 
 /** @} */ // end of X group
 /** @} */ // end of X group
